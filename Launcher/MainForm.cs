@@ -4,9 +4,6 @@ using System.Windows.Forms;
 
 namespace Launcher
 {
-    /// <summary>
-    /// Launch Simple Git GUI without a shell in the background
-    /// </summary>
     public partial class MainForm : Form
     {
         public MainForm()
