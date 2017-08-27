@@ -12,13 +12,12 @@ namespace Launcher
         }
 
         /// <summary>
-        /// Launch NPM in the background
+        /// Execute "npm start" in the background
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            //Start NPM
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo()
             {
@@ -28,7 +27,6 @@ namespace Launcher
             };
             process.StartInfo = startInfo;
             process.Start();
-            //Exit
             Application.Exit();
         }
     }
